@@ -43,3 +43,16 @@ name[1:-1]  # ack Leun
 # formated string
 print(f'{name} like [{colour}].')  # Jack Leung like [Blue].
 # directly insert variables into string
+
+
+# string method
+# len() is general function only!!
+#               Jack Leung
+#               0123456789
+len(name)  # 10
+name.upper()  # JACK LEUNG
+name.lower()  # jack leung
+name.find('Leu')  # 5 (first occurence only)
+name.find('cheap')  # -1
+name.replace("Leung", 'is the best')  # Jack is the best
+'cheap' in name  # False
