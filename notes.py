@@ -7,7 +7,7 @@ print("*" * 3)  # this output "***"
 
 price = 10  # integer
 rating = 4.9  # float
-name = 'Jack'  # string
+full_name = 'Jack'  # string
 iamgreat = True  # Boolean (MUST CAP THE FIRST LETTER)
 
 # input statement
