@@ -42,6 +42,7 @@ name[0:3]  # Jac (0 can be neglected)
 name[2:]  # ck Leung (canNot add 0)
 name[1:-1]  # ack Leun
 
+
 # formated string
 print(f'{name} like [{colour}].')  # Jack Leung like [Blue].
 # directly insert variables into string
@@ -58,6 +59,7 @@ name.find('Leu')  # 5 (first occurence only)
 name.find('cheap')  # -1
 name.replace("Leung", 'is the best')  # Jack is the best
 'cheap' in name  # False
+
 
 # opreators
 10 + 3  # 13
