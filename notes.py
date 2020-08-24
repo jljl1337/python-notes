@@ -33,6 +33,8 @@ print(type(str(g_kg)))  # changeing the type of g_kg into string
 
 
 # array of character
+# Jack Leung
+# 0123456789
 name = "Jack Leung"
 name[0]  # J
 name[-1]  # g
@@ -56,3 +58,15 @@ name.find('Leu')  # 5 (first occurence only)
 name.find('cheap')  # -1
 name.replace("Leung", 'is the best')  # Jack is the best
 'cheap' in name  # False
+
+# opreators
+10 + 3  # 13
+10 - 3  # 7
+10 * 3  # 30
+10 / 3  # 3.33333333333333333333333
+10 // 3  # 3 (quotient)
+10 % 3  # 1 (remainder)
+10 ** 3  # 1000 (expotential)
+x = 2
+x += 3  # x = x + 3 (work with other operation)
+# ()  >  **  >  */  >  +-
