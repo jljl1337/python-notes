@@ -161,3 +161,17 @@ for i in numbers:
     for j in range(i):
         text += "*"
     print(text)
+
+
+# array
+['jack', 'is', 'great']  # 1D
+array = [  # 2D
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+array[1][0]  # 4
+# array[row][columb]
+for i in array:
+    for j in i:
+        print(j)  # 1,2,3 ... 9
