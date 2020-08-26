@@ -206,22 +206,22 @@ x, y, z = number
 
 
 # dictionary
-numberDict = {
+number_dict = {
     "name": "Jack",
     "age": 18,
     "adult": True
 }
-numberDict.get("name")  # return 'Jack'
-numberDict.get("birthdate", '831')  # add a new key 'birthdate' valued '831'
+number_dict.get("name")  # return 'Jack'
+number_dict.get("birthdate", '831')  # add a new key 'birthdate' valued '831'
 # if the key does not exist, the value of the second field will be returned
-numToWord = {
+num_to_word = {
     '1': 'One',
     '2': 'Two'
 }
 a = '1'
 b = '3'
-numToWord.get(a, a)  # 'One'
-numToWord.get(b, b)  # '3'
+num_to_word.get(a, a)  # 'One'
+num_to_word.get(b, b)  # '3'
 # this can be used to convert some word such as emoji
 
 
@@ -236,10 +236,22 @@ def square(num):
 square(3)  # return 9
 
 
-def greet(firstName, lastName):
-    print(f'Hi {firstName} {lastName}!')
+def greet(first_name, last_name):
+    print(f'Hi {first_name} {last_name}!')
 
 
 greet('Jack', 'Leung')  # positional argument
-greet(lastName='Leung', firstName='Jack')  # keyword arguement,  more readable
-greet('jack', firstName='leung')  # this create an error (duplicated argument)
+greet(last_name='Leung', first_name='Jack')  # keyword arguement, more readable
+# greet('jack', first_name='leung') this create an error (duplicated argument)
+
+
+# exceptions
+try:
+    total_income = int(input('The annual income is: '))
+    working_duration = int(input('The working duration is: '))
+    monthly_income = total_income / working_duration
+    print(f'the monthly income is: {monthly_income}')
+except ValueError:
+    print('Please input a integer')
+except ZeroDivisionError:
+    print('Please input a positive number')
