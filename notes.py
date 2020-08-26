@@ -33,7 +33,7 @@ print(type(g_kg))  # output the type of g_kg, which is float
 print(type(str(g_kg)))  # changeing the type of g_kg into string
 
 
-# array of character
+# list(array) of character
 # Jack Leung
 # 0123456789
 name = "Jack Leung"
@@ -163,7 +163,7 @@ for i in numbers:
     print(text)
 
 
-# array
+# list(array)
 ['jack', 'is', 'great']  # 1D
 array = [  # 2D
     [1, 2, 3],
@@ -175,3 +175,24 @@ array[1][0]  # 4
 for i in array:
     for j in i:
         print(j)  # 1,2,3 ... 9
+
+
+# list(array) method
+array = [5, 1, 5, 3, 7, 5, 9, 3]
+array.append(13)  # add 13 to the end of the list
+array.insert(2, 12)  # insert 12 between the 2nd and 3rd value
+array.remove(5)  # remove the first occurence of 5
+array.clear()  # remove all items
+array = [5, 1, 5, 3, 7, 5, 9, 3]
+array.pop()  # remove AND return the last item/selected item
+array.index(3)  # return index of the first occurence of 3
+array.count(5)  # return the number of occurence of 5
+array.sort()  # sort in as(de)cending order(add "reverse=True" inside)
+array.reverse()  # reverse the array
+4 in array  # return whether 4 is one of the item in array
+
+
+# tuple (simplar to list but cannot be modified)
+number = (1, 2, 3)
+number.count(1)
+number.index(2)
