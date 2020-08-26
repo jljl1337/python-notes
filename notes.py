@@ -114,8 +114,7 @@ name = "Jack Leung"
 if len(name) == 0:
     print("please enter the name")
 elif name != "Jack Leung":
-    print("you are not Jack Leung")
-
+    print("")
 if len(name) < 3:
     print("the name must be at least 3 characters long")
 elif len(name) > 50:
