@@ -54,14 +54,15 @@ print(f'{name} like [{colour}].')  # Jack Leung like [Blue].
 
 # string method
 # len() is general function only!!
-#               Jack Leung
-#               0123456789
+# index:0123456789
+name = "Jack Leung"
 len(name)  # 10
 name.upper()  # JACK LEUNG
 name.lower()  # jack leung
 name.find('Leu')  # 5 (first occurence only)
 name.find('cheap')  # -1
 name.replace("Leung", 'is the best')  # Jack is the best
+name.split()  # a list with words separated by spaces
 'cheap' in name  # False
 
 
