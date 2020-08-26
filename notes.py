@@ -37,6 +37,7 @@ print(type(str(g_kg)))  # changeing the type of g_kg into string
 # Jack Leung
 # 0123456789
 name = "Jack Leung"
+
 name[0]  # J
 name[-1]  # g
 name[0:3]  # Jac (0 can be neglected)
@@ -45,6 +46,8 @@ name[1:-1]  # ack Leun
 
 
 # formated string
+name = "Jack Leung"
+colour = "Blue"
 print(f'{name} like [{colour}].')  # Jack Leung like [Blue].
 # directly insert variables into string
 
