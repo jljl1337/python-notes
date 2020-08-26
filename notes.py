@@ -8,7 +8,7 @@ print("Hello world")  # this output the string "Hello world"
 print("*" * 3)  # this output "***"
 
 
-# variables (MUST INOT* CAP THE FIRST LETTER)
+# variables (MUST NOT* CAP THE FIRST LETTER)
 10  # integer
 4.9  # float
 'Jack'  # string (can use '' or "")
