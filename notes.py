@@ -138,3 +138,26 @@ print(f"you guess the number by {i} time(s)")
 #   if int(input("Guess a number, 1 to 10 inclusively: ")) = secret:
 #       break
 #   print(f"you guess the number by {i} time(s)")
+
+
+# for loop
+for i in "python":
+    print(i)  # print the characters one by one
+for i in ['jack', 'is', 'great']:
+    print(i)  # print the words one by one
+range(10)  # 0 ~ 9
+range(5, 10)  # 5 ~ 9
+range(5, 10, 2)  # 5, 7, 9
+# nested looping
+# demo: printing a MAJOR F
+# *****
+# **
+# *****
+# **
+# **
+numbers = [5, 2, 5, 2, 2]
+for i in numbers:
+    text = ""
+    for j in range(i):
+        text += "*"
+    print(text)
