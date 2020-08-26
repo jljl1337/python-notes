@@ -65,7 +65,7 @@ name.replace("Leung", 'is the best')  # Jack is the best
 'cheap' in name  # False
 
 
-# opreators
+# math opreators
 10 + 3  # 13
 10 - 3  # 7
 10 * 3  # 30
@@ -77,6 +77,7 @@ x = 2
 x += 3  # x = x + 3 (work with other operation)
 # ()   >>   **   >>   */   >>   +-
 
+
 # math functions
 round(2.9)  # 3
 abs(-3)  # 3
@@ -84,6 +85,7 @@ abs(-3)  # 3
 # which may vary from different version of python
 math.floor(2.2)  # 3 (round up)
 math.ceil(2.2)  # 3 (round down)
+
 
 # if statement
 hot = False
@@ -94,3 +96,29 @@ elif cold:
     print("wear more")
 else:
     print("It is great")
+
+
+# logical operator
+hot = False
+cold = True
+if hot and cold:
+    print("that is weird")
+if hot or cold:
+    print("just prepare for the weather")
+if not hot:
+    print("it is not hot")
+
+
+# comparision operator
+name = "Jack Leung"
+if len(name) == 0:
+    print("please enter the name")
+elif name != "Jack Leung":
+    print("you are not Jack Leung")
+
+if len(name) < 3:
+    print("the name must be at least 3 characters long")
+elif len(name) > 50:
+    print("the name must be at most 50 characters long")
+else:
+    print(f"the name {name} is good")
