@@ -214,3 +214,32 @@ numberDict = {
 numberDict.get("name")  # return 'Jack'
 numberDict.get("birthdate", '831')  # add a new key 'birthdate' valued '831'
 # if the key does not exist, the value of the second field will be returned
+numToWord = {
+    '1': 'One',
+    '2': 'Two'
+}
+a = '1'
+b = '3'
+numToWord.get(a, a)  # 'One'
+numToWord.get(b, b)  # '3'
+# this can be used to convert some word such as emoji
+
+
+# function
+# arguement VS parameters
+# actual input value VS the variable
+# eg 3 VS num
+def square(num):
+    return num ** 2
+
+
+square(3)  # return 9
+
+
+def greet(firstName, lastName):
+    print(f'Hi {firstName} {lastName}!')
+
+
+greet('Jack', 'Leung')  # positional argument
+greet(lastName='Leung', firstName='Jack')  # keyword arguement,  more readable
+greet('jack', firstName='leung')  # this create an error (duplicated argument)
