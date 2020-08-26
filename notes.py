@@ -1,3 +1,4 @@
+import math
 # comment
 # either start at the beginning of the line
 # or TWO space after any lines
@@ -71,4 +72,12 @@ name.replace("Leung", 'is the best')  # Jack is the best
 10 ** 3  # 1000 (expotential)
 x = 2
 x += 3  # x = x + 3 (work with other operation)
-# ()  >  **  >  */  >  +-
+# ()   >>   **   >>   */   >>   +-
+
+# math functions
+round(2.9)  # 3
+abs(-3)  # 3
+# advanced ones need to write "import math" at the top of the file
+# which may vary from different version of python
+math.floor(2.2)  # 3 (round up)
+math.ceil(2.2)  # 3 (round down)
