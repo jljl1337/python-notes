@@ -81,3 +81,13 @@ abs(-3)  # 3
 # which may vary from different version of python
 math.floor(2.2)  # 3 (round up)
 math.ceil(2.2)  # 3 (round down)
+
+# if statement
+hot = False
+cold = False
+if hot:
+    print("It is hot")
+elif cold:
+    print("wear more")
+else:
+    print("It is great")
