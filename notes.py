@@ -198,6 +198,7 @@ number = (1, 2, 3)
 number.count(1)
 number.index(2)
 
+
 # unpacking (works with both list and tuple)
 number = (1, 2, 3)
 x, y, z = number
