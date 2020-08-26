@@ -202,3 +202,14 @@ number.index(2)
 number = (1, 2, 3)
 x, y, z = number
 # x = 1, y = 2, z = 3
+
+
+# dictionary
+numberDict = {
+    "name": "Jack",
+    "age": 18,
+    "adult": True
+}
+numberDict.get("name")  # return 'Jack'
+numberDict.get("birthdate", '831')  # add a new key 'birthdate' valued '831'
+# if the key does not exist, the value of the second field will be returned
