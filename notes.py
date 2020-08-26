@@ -122,3 +122,19 @@ elif len(name) > 50:
     print("the name must be at most 50 characters long")
 else:
     print(f"the name {name} is good")
+
+
+# while loop
+secret = 3
+i = 1
+while input("Guess a number, 1 to 10 inclusively: ") != str(secret):
+    print("you are wrong!")
+    i += 1
+print(f"you guess the number by {i} time(s)")
+# secret = 3
+# i = 0
+# while True
+#   i += 1
+#   if int(input("Guess a number, 1 to 10 inclusively: ")) = secret:
+#       break
+#   print(f"you guess the number by {i} time(s)")
