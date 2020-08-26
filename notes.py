@@ -65,7 +65,7 @@ name.replace("Leung", 'is the best')  # Jack is the best
 'cheap' in name  # False
 
 
-# opreators
+# math opreators
 10 + 3  # 13
 10 - 3  # 7
 10 * 3  # 30
@@ -94,3 +94,13 @@ elif cold:
     print("wear more")
 else:
     print("It is great")
+
+# logical operator
+hot = False
+cold = True
+if hot and cold:
+    print("that is weird")
+if hot or cold:
+    print("just prepare for the weather")
+if not hot:
+    print("it is not hot")
