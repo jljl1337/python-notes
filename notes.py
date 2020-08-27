@@ -190,7 +190,7 @@ array.index(3)  # return index of the first occurence of 3
 array.count(5)  # return the number of occurence of 5
 array.sort()  # sort in as(de)cending order(add "reverse=True" inside)
 array.reverse()  # reverse the array
-4 in array  # return whether 4 is one of the item in array
+4 in array  # return whether 4 is one of the item in array (boolean)
 
 
 # tuple (simplar to list but cannot be modified)
