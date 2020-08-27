@@ -245,12 +245,53 @@ greet(last_name='Leung', first_name='Jack')  # keyword arguement, more readable
 # greet('jack', first_name='leung') this create an error (duplicated argument)
 
 
+# classes
+class Point:
+    def __init__(self, intput_x, intput_y):
+        self.x = intput_x
+        self.y = intput_y
+
+    def move(self):
+        print('move')
+
+    def draw(self):
+        print('draw')
+
+
+point_1 = Point(6, 4)
+point_1.move()
+
+
+# inheritance
+class Animal:
+    def __init__(self, input_name):
+        self.name = input_name
+
+    def walk(self):
+        print('walk')
+
+
+class dog(Animal):
+    def bark(self):
+        print('bark')
+
+
+class cat(Animal):
+    def meow(self):
+        print('meow')
+
+
+p = cat('little p')
+p.walk()
+p.meow()
+
+
 # exceptions
 try:
     total_income = int(input('The annual income is: '))
     working_duration = int(input('The working duration is: '))
     monthly_income = total_income / working_duration
-    print(f'the monthly income is: {monthly_income}')
+    print(f'the monthly income is: ${monthly_income}')
 except ValueError:
     print('Please input a integer')
 except ZeroDivisionError:
