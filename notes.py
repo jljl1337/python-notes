@@ -1,7 +1,6 @@
 import math
 # comment
-# either start at the beginning of the line
-# or TWO space after any lines
+# any line start with the symbol '#' is a comment
 
 # print statement
 print("Hello world")  # this output the string "Hello world"
