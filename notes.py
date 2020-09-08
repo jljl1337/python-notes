@@ -7,9 +7,13 @@ print("Hello world")  # this output the string "Hello world"
 print("*" * 3)  # this output "***"
 
 
-# variables (MUST NOT* CAP THE FIRST LETTER)
-10  # integer
+# values and variables (MUST NOT* CAP THE FIRST LETTER)
+10  # integer in decimal (literals, as it is written out literally)
+0b1111  # binary number
+0xF  # hexadecimal number 0~F (0~15)
+1 + 2  # experssion which evaluates to the integer value
 4.9  # float
+# string
 'Jack'  # string (can use '' or "")
 "I'm great"  # to add ' into a string, you can only use ""
 message = '''Hi
