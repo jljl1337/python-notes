@@ -6,6 +6,7 @@ import math
 print("Hello world")  # this output the string "Hello world"
 print("*" * 3)  # this output "***"
 print("abc", "cde")  # "abc cde"
+print("abc" + "cde")  # "abccde"
 
 
 # values and variables (MUST NOT* CAP THE FIRST LETTER)
@@ -60,6 +61,8 @@ print(f'{name} like [{colour}].')  # Jack Leung like [Blue].
 # this does not work in older version of Python!
 # instead, you may use the following one:
 print("{} like [{}] very much.".format(name, colour))
+# you may use "{name} like [{colour}] very much.".format(colour, name)
+# or "{1} like [{0}] very much.".format(colour, name)
 # this is a string method, which will be included in the next section
 
 
@@ -92,11 +95,21 @@ x += 3  # x = x + 3 (work with other operation)
 
 # math functions
 round(2.9)  # 3
+round(10000/3, 2)  # 2 d.p.
+round(10000/3, -2)  # neared 100
 abs(-3)  # 3
 # advanced ones need to write "import math" at the top of the file
 # which may vary from different version of python
 math.floor(2.2)  # 3 (round up)
 math.ceil(2.2)  # 3 (round down)
+# string formatting can also be used to correct the number to certain digit:
+x = 10000 / 3
+"{:.2f} is corrected to the nearest 2 d.p.".format(x)  # 3333.33
+"{:,.2f} is corrected to the nearest 2 d.p.".format(x)  # 3,333.33
+"{:0>2d}".format(5)  # 05
+"{:x<3d}".format(5)  # 5xx
+"{:c^4d}".format(5)  # c5cc
+# also work with string, without the last character in {}
 
 
 # if statement
