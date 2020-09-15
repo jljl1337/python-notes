@@ -224,6 +224,7 @@ for i in array:
 
 # list(array) method
 array = [5, 1, 5, 3, 7, 5, 9, 3]
+array_2 = array.copy()  # !! This method has to be used to copy an array !!
 array.append(13)  # add 13 to the end of the list
 array.insert(2, 12)  # insert 12 between the 2nd and 3rd value
 array.remove(5)  # remove the first occurence of 5
