@@ -5,6 +5,7 @@ import math
 # print statement
 print("Hello world")  # this output the string "Hello world"
 print("*" * 3)  # this output "***"
+print("abc", "cde")  # "abc cde"
 
 
 # values and variables (MUST NOT* CAP THE FIRST LETTER)
@@ -26,6 +27,8 @@ iamgreat = True  # Boolean (MUST CAP THE FIRST LETTER)
 name = input('Your name is: ')  # this input a string
 colour = input("Your favourite colour is: ")
 print(name + " like " + colour + '.')
+# It can be used inside the print statement as well
+print("Hello", input("Your name is? "))
 
 
 # conversion of type of variables
