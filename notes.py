@@ -130,6 +130,7 @@ elif cold:
     print("wear more")
 else:
     print("It is great")
+div = a / b if b else "undefined"
 
 
 # logical operator
@@ -156,6 +157,16 @@ elif len(name) > 50:
     print("the name must be at most 50 characters long")
 else:
     print(f"the name {name} is good")
+
+# chained comparision
+1 <= 2 < 3 != 4  # True
+# !(1 == 2) is invalid! Use not instead!
+
+# comparing floating point number
+x = 10
+y = (10 ** 3) ** (1/3)  # 9.999999999999998
+x == y  # False
+math.isclose(x, y)  # True
 
 
 # while loop
