@@ -24,6 +24,15 @@ print(message)
 iamgreat = True  # Boolean (MUST CAP THE FIRST LETTER)
 
 
+# assignment statement
+x = 10
+y = 13
+z = x + y
+print(z)
+a = b = c = 27  # a, b, c = 27
+x, y = y, x  # swap x and y
+
+
 # input statement
 name = input('Your name is: ')  # this input a string
 colour = input("Your favourite colour is: ")
