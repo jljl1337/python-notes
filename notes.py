@@ -9,7 +9,7 @@ print("abc", "cde")  # "abc cde"
 print("abc" + "cde")  # "abccde"
 
 
-# values and variables (MUST NOT* CAP THE FIRST LETTER)
+# values and variables (MUST *NOT* CAP THE FIRST LETTER)
 10  # integer in decimal (literals, as it is written out literally)
 0b1111  # binary number
 0xF  # hexadecimal number 0~F (0~15)
