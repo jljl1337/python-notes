@@ -49,10 +49,15 @@ name[1:-1]  # ack Leun
 
 
 # formated string
+# directly insert variables into string
 name = "Jack Leung"
 colour = "Blue"
 print(f'{name} like [{colour}].')  # Jack Leung like [Blue].
-# directly insert variables into string
+# !!! f-string is added since Python 3.6 !!!
+# this does not work in older version of Python!
+# instead, you may use the following one:
+print("{} like [{}] very much.".format(name, colour))
+# this is a string method, which will be included in the next section
 
 
 # string method
