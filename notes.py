@@ -131,6 +131,7 @@ elif cold:
 else:
     print("It is great")
 div = a / b if b else "undefined"
+# it can be if b: div = a / b else "undefined"
 
 
 # logical operator
