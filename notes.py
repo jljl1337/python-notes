@@ -143,6 +143,15 @@ if hot or cold:
     print("just prepare for the weather")
 if not hot:
     print("it is not hot")
+# print('You have entered', input() or 'nothing')
+# "nothing" will be put at the end of the line if nothing is inputed
+# (since empty string is regarded as False)
+# !!!these operator look for the left value first!!!
+# For "True or XXXX", since True of whatever is True, the left one will not be
+# evaluted
+# USEFUL SITUATION:
+# 0 is special case or special case value
+# !0 is special case and special case value
 
 
 # comparision operator
