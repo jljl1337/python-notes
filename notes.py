@@ -203,6 +203,7 @@ for i in ['jack', 'is', 'great']:
 range(10)  # 0 ~ 9
 range(5, 10)  # 5 ~ 9
 range(5, 10, 2)  # 5, 7, 9
+range(5, -1, -1)  # 5 ~ 0
 # nested looping
 # demo: printing a MAJOR F
 # *****
