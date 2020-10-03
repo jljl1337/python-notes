@@ -219,6 +219,38 @@ for i in numbers:
     print(text)
 
 
+# break/continue/else in loop
+while True:
+    message = input('Input something please:')
+    if message:
+        break
+print('You entered:', message)
+# The break statement terminate the loop if message is not empty
+while True:
+    message = input('Input something please:')
+    if not message:
+        continue
+    print('You entered:', message)
+    break
+# The continue statement jump to the next interation if message is empty
+num = input("Please input an number to check if it is composite: ")
+if num.isdigit():
+    num = int(num)
+    for divisor in range(2, num):
+        if num % divisor:
+            continue
+        else:
+            print('It is composite.')
+            break
+    else:
+        print('It is not composite.')
+else:
+    print('Not a positive integer.')
+# The else block is executed when the loop is terminated normally
+# (NOT by break statement)
+# it is logically "if not break"
+
+
 # list(array)
 ['jack', 'is', 'great']  # 1D
 array = [  # 2D
