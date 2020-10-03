@@ -317,6 +317,18 @@ num_to_word.get(b, b)  # '3'
 # arguement VS parameters
 # actual input value VS the variable
 # eg 3 VS num
+
+# using functions
+# import random
+# randint(1, 6)
+# OR
+# from random import randint
+# randint(1, 6)    <= which may induce naming issues
+# OR
+# from random import randint as ran
+# ran(1, 6)
+
+# writing functions
 def square(num):
     return num ** 2
 
