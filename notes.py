@@ -1,47 +1,85 @@
 import math
-# comment
+# Comment
 # any line start with the symbol '#' is a comment
 
-# print statement
+
+# Print Statement
 print("Hello world")  # this output the string "Hello world"
-print("*" * 3)  # this output "***"
-print("abc", "cde")  # "abc cde"
-print("abc" + "cde")  # "abccde"
+print("abc", "cde")  # "abc cde\n"
+print("abc", "cde", sep='')  # "abccde\n", default value of sep is ' '
+print("abc", "cde", end='\n\n')  # "abc cde\n\n", default end is '\n'
 
 
-# values and variables (MUST *NOT* CAP THE FIRST LETTER)
-10  # integer in decimal (literals, as it is written out literally)
-0b1111  # binary number
-0xF  # hexadecimal number 0~F (0~15)
-1 + 2  # experssion which evaluates to the integer value
-4.9  # float
-# string
-'Jack'  # string (can use '' or "")
-"I'm great"  # to add ' into a string, you can only use ""
-message = '''Hi
-WOW'''  # string with more than one line (also can use """""")
-print(message)
-iamgreat = True  # Boolean (MUST CAP THE FIRST LETTER)
-
-
-# assignment statement
-x = 10
-y = 13
-z = x + y
-print(z)
-a = b = c = 27  # a, b, c = 27
-x, y = y, x  # swap x and y
-
-
-# input statement
-name = input('Your name is: ')  # this input a string
+# Input Statement
+name = input('Your name is: ')  # the input statement always return a string
 colour = input("Your favourite colour is: ")
 print(name + " like " + colour + '.')
 # It can be used inside the print statement as well
 print("Hello", input("Your name is? "))
+# Similar to above, nested input statement will execute first
 
 
-# conversion of type of variables
+# Values and Variables (MUST *NOT* CAP THE FIRST LETTER)
+# Noted that variable names are case SENSITIVE, so ab is different from Ab
+
+# integer
+10  # integer in decimal (literals, as it is written out literally)
+# (integer has no upper or lower limit)
+0b1111  # binary number
+0xF  # hexadecimal number 0~F (0~15)
+1 + 2  # experssion which evaluates to the integer value
+
+# string
+'Jack'  # string (can use '' or "")
+"I'm great"  # to add ' into a string, you can only use ""
+"\n"  # \ is an escape character, where \n is a new line character,
+# and \U... with ... replaced by unicode can express emoji
+message = '''Hi
+WOW'''  # string with more than one line (also can use """""")
+# This is used to write docstring of function and class
+"*" * 3  # "***"
+"4" + "5"  # "45" since they are string but not number
+print(message)
+iamgreat = True  # Boolean (MUST CAP THE FIRST LETTER) True/False
+
+# floating point number
+4.9  # decimal number
+-1.0e-1  # scientific notation
+-1/10  # fraction
+# floating point has finite precision (usually 64 bits)
+# with upper and lower limit
+# round(num, number of decimal place (negative works as well))
+round(2.35, 1)  # 2.4
+# !!this may FAIL due to how it is represented in binary!!
+
+
+# String Formatting
+# directly insert variables into string
+name = "Jack Leung"
+colour = "Blue"
+print(f'{name} like [{colour}].')  # Jack Leung like [Blue].
+# !!! f-string is added since Python 3.6 !!!
+# this does not work in older version of Python!
+
+# instead, you may use the following one:
+print("{} like [{}] very much.".format(name, colour))
+# you may use "{name} like [{colour}] very much.".format(colour, name)
+# or "{1} like [{0}] very much.".format(colour, name)
+"{0:.2f}".format(3.3333)  # 3.33 as :.2f means 2 sign. fig.
+# There are more formating options can be found in the document
+# this is a string method, which will be included in a following section
+
+
+# Assignment Statement
+x = 10
+y = 13
+z = x + y
+print(z)
+a = b = c = 27  # a, b, c = 27 (This does not work with list!!)
+x, y = y, x  # swap x and y
+
+
+# Conversion of Type of Variables
 g_lbs = input('weight in lbs: ')
 g_kg = int(g_lbs) * 0.45  # changing the g_lbs into float first
 print(g_kg)
@@ -59,20 +97,6 @@ name[-1]  # g
 name[0:3]  # Jac (0 can be neglected)
 name[2:]  # ck Leung (canNot add 0)
 name[1:-1]  # ack Leun
-
-
-# formated string
-# directly insert variables into string
-name = "Jack Leung"
-colour = "Blue"
-print(f'{name} like [{colour}].')  # Jack Leung like [Blue].
-# !!! f-string is added since Python 3.6 !!!
-# this does not work in older version of Python!
-# instead, you may use the following one:
-print("{} like [{}] very much.".format(name, colour))
-# you may use "{name} like [{colour}] very much.".format(colour, name)
-# or "{1} like [{0}] very much.".format(colour, name)
-# this is a string method, which will be included in the next section
 
 
 # string method
